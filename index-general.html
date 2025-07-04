@@ -1,0 +1,101 @@
+<!-- index-general.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎯 Our Plan - General TNEA Predictor</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #ffffff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #1e3d59;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #444;
+      margin: 10px 0;
+    }
+    .reason {
+      background: #eaf7e9;
+      border-left: 5px solid #2ecc71;
+      padding: 10px;
+      font-size: 0.95em;
+      margin-bottom: 20px;
+    }
+    .pay-button {
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #f0f0f0;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>🎯 Our Plan - General Students Predictor</header>
+
+  <main>
+    <div class="card">
+      <h1>Unlock College Predictor</h1>
+      <p><strong>₹25 - One-Time Access</strong></p>
+      <div class="reason">
+        This payment supports development and keeps the tool up-to-date. You'll gain access to the General Quota TNEA college predictor based on your community and cutoff.
+      </div>
+      <div class="pay-button">
+        <form>
+          <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                  data-payment_button_id="pl_QotutBJWn89xGq"
+                  async></script>
+        </form>
+      </div>
+      <p class="disclaimer">After payment, you'll be redirected to the predictor tool. Use this only as a reference — data is based on past trends.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Our Plan | General Students TNEA Tool | Powered by Target ₹3K
+  </footer>
+
+  <script>
+    window.addEventListener('message', function(e) {
+      if (e.data && e.data.event === 'payment.success') {
+        window.location.href = 'predictor.html?access=true';
+      }
+    });
+  </script>
+</body>
+</html>
